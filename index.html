@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="main_container">
+      <div class="converter">
+        <h1 class="header">Currency Converter Online</h1>
+        <div class="currency_container">
+          <div class="currency_current">
+            <div class="currency_units_container">
+              <span>All I Have</span>
+              <div class="units">
+                <ul class="rates">
+                  <li class="active">RUB</li>
+                  <li>USD</li>
+                  <li>EUR</li>
+                  <li>GBP</li>
+                </ul>
+                <div style="position: relative">
+                  <input
+                    id="search_from"
+                    type="text"
+                    placeholder="Search Currency..."
+                  />
+                  <div class="options"></div>
+                </div>
+                <div class="input_container">
+                  <input type="number" class="current_input" value="0" />
+                  <span class="input_span"></span>
+                </div>
+              </div>
+            </div>
+            <div class="amount_container">
+              <div class="amount">
+                <h2></h2>
+                <span class="desc"></span>
+              </div>
+            </div>
+          </div>
+          <button class="btn">Change Currency</button>
+          <div class="currency_change_container">
+            <div class="currency_change_units">
+              <span>I want to change</span>
+              <div class="units convertable">
+                <ul class="converted">
+                  <li class="active">RUB</li>
+                  <li>USD</li>
+                  <li>EUR</li>
+                  <li>GBP</li>
+                </ul>
+                <div style="position: relative">
+                  <input
+                    id="search_to"
+                    type="text"
+                    placeholder="Search Currency..."
+                  />
+                  <div class="options_to"></div>
+                </div>
+                <div class="input_result_container">
+                  <div class="result_input"></div>
+                  <span class="result_span"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
